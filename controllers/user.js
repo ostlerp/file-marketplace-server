@@ -1,4 +1,8 @@
+const User = require('../models/user');
 
-module.exports.getAll = (request, reply) => {
-    reply('Hello, world controller!');
+exports.getAll = (request, reply) => {
+
+    User.find().exec((err, results) => {
+        reply(results);
+    });
 }
