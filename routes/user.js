@@ -2,7 +2,7 @@ const userController = require('../controllers/user');
 
 const routes = [{
     method: 'GET',
-    path: '/user',
+    path: '/users',
     handler: userController.getAll
 }];
 
